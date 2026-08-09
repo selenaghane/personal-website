@@ -22,29 +22,80 @@
       background: #05123b;
       color: #ffffff;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+      flex-direction: column;
       padding: 25px;
     }
 
-    h1 {
-      font-size: 56px;
-      font-weight: normal;
-      margin: 0;
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .logo {
+      font-size: 22px;
       letter-spacing: 1px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 28px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      position: relative;
+      padding-bottom: 4px;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: #ffffff;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.25s ease;
+    }
+
+    nav a:hover::after {
+      transform: scaleX(1);
+    }
+
+    main {
+      flex: 1;
     }
 
     @media (max-width: 480px) {
-      h1 {
-        font-size: 36px;
+      nav {
+        gap: 18px;
       }
     }
   </style>
 </head>
 
 <body>
-  <h1>selena ghane</h1>
+  <header>
+    <a class="logo" href="#">selena ghane</a>
+    <nav>
+      <a href="#">about</a>
+      <a href="#">projects</a>
+      <a href="#">writing</a>
+      <a href="#">contact</a>
+    </nav>
+  </header>
+
+  <main></main>
 </body>
 
 </html>
