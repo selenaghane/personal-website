@@ -74,6 +74,7 @@ main {
   display: none;
   max-width: 640px;
   margin: 48px auto 0;
+  text-align: center;
 }
 
 .tab:target {
@@ -85,10 +86,19 @@ main {
 }
 
 .blog-title {
-  color: #9ecbff;
   font-size: 24px;
   font-weight: 500;
   margin: 0 0 6px;
+}
+
+.blog-title a {
+  color: #e0f0ff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.blog-title a:hover {
+  color: #ffffff;
 }
 
 .blog-meta {
