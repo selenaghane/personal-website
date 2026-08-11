@@ -70,6 +70,40 @@ main {
   flex: 1;
 }
 
+.tab {
+  display: none;
+  max-width: 640px;
+  margin: 48px auto 0;
+}
+
+.tab:target {
+  display: block;
+}
+
+.blog-entry {
+  margin-bottom: 36px;
+}
+
+.blog-title {
+  color: #9ecbff;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 6px;
+}
+
+.blog-meta {
+  color: #ffffff;
+  opacity: 0.7;
+  font-size: 15px;
+  margin: 0 0 10px;
+}
+
+.blog-summary {
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.5;
+}
+
 @media (max-width: 600px) {
   header {
     grid-template-columns: 1fr;
