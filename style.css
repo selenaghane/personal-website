@@ -74,7 +74,6 @@ main {
   display: none;
   max-width: 640px;
   margin: 48px auto 0;
-  text-align: center;
 }
 
 .tab:target {
